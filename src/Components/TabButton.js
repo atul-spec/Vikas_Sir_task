@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     View,
     Text,
@@ -7,14 +7,18 @@ import {
 
 
 
+const TabButton = ({ label, click, mycolor }) => {
 
-const TabButton = ({ label }) => {
     return (
-        <View style={{ flex: 1, width: 50 ,height:50,justifyContent:'center',marginHorizontal:10}}>
-            <TouchableOpacity>
-                <Text style={{ fontSize: 20, alignSelf: 'center' }}>{label}</Text>
+        <View style={{ backgroundColor: mycolor, height: 50, borderRadius: 25, justifyContent: 'center' }}>
+            <TouchableOpacity
+                onPress={click}
+            >
+                <Text style={{ fontSize: 20, fontWeight: 'bold', alignSelf: 'center', color: mycolor == "gray" ? "#FFFFFF": "blue" , padding: 15 }}>{label}</Text>
             </TouchableOpacity>
         </View>
+
+
 
     )
 }

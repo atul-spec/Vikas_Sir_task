@@ -12,6 +12,8 @@ target 'AuthRedux' do
     :hermes_enabled => false
   )
 
+  pod 'RNTritonPlayer', :path => '../node_modules/react-native-triton-player'
+
   target 'AuthReduxTests' do
     inherit! :complete
     # Pods for testing

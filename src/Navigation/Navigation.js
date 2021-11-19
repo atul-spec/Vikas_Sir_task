@@ -13,13 +13,7 @@ import MainLayout from "../Components/MainLayout";
 
 const Stack = createNativeStackNavigator();
 
-
-
-
 const Navigation = () => {
-
-  // const [isLoding, setIsLoading] = React.useState(true);
-  // const [userToken, setUserToken] = React.useState(null);
 
   const intialLoginState = {
     isLoading: true,
